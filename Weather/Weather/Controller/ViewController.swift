@@ -12,17 +12,20 @@ import CoreLocation
 class ViewController: UITableViewController, CLLocationManagerDelegate {
     
     var locationManager:CLLocationManager!
-    var listWeather: ListWeather? { didSet{
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
+    var listWeather: ListWeather? {
+        didSet{
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
-        
-        }}
+    }
 
+    var name: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        tableView.register(WeatherCell.self, forCellReuseIdentifier: "WeatherCell")
         determineMyCurrentLocation()
     }
     
@@ -30,6 +33,7 @@ class ViewController: UITableViewController, CLLocationManagerDelegate {
         super.viewDidAppear(animated)
         let manager = WeatherManager()
         
+        self.navigationItem.title = name
         guard let latitude = locationManager.location?.coordinate.latitude, let longitude = locationManager.location?.coordinate.longitude else {
             print("error latitude or longitude nil")
             return

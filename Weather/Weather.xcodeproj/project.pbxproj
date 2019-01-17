@@ -22,6 +22,11 @@
 		2C55F5CA21F0E54A00413BF5 /* ListWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55F5C921F0E54A00413BF5 /* ListWeather.swift */; };
 		2C55F5CF21F0F04900413BF5 /* MainWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55F5CE21F0F04900413BF5 /* MainWeather.swift */; };
 		2C55F5D121F0F86200413BF5 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55F5D021F0F86200413BF5 /* WeatherCell.swift */; };
+		2C55F5D521F1186E00413BF5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C55F5D221F1186D00413BF5 /* FBSDKLoginKit.framework */; };
+		2C55F5D621F1186E00413BF5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C55F5D321F1186D00413BF5 /* FBSDKCoreKit.framework */; };
+		2C55F5D721F1186E00413BF5 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C55F5D421F1186E00413BF5 /* Bolts.framework */; };
+		2C55F5D921F11D3E00413BF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55F5D821F11D3E00413BF5 /* LoginViewController.swift */; };
+		2C55F5DB21F11D6400413BF5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C55F5DA21F11D6400413BF5 /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +68,11 @@
 		2C55F5C921F0E54A00413BF5 /* ListWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWeather.swift; sourceTree = "<group>"; };
 		2C55F5CE21F0F04900413BF5 /* MainWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeather.swift; sourceTree = "<group>"; };
 		2C55F5D021F0F86200413BF5 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		2C55F5D221F1186D00413BF5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Libs/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2C55F5D321F1186D00413BF5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Libs/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2C55F5D421F1186E00413BF5 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = Libs/Bolts.framework; sourceTree = "<group>"; };
+		2C55F5D821F11D3E00413BF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2C55F5DA21F11D6400413BF5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C55F5D721F1186E00413BF5 /* Bolts.framework in Frameworks */,
+				2C55F5D521F1186E00413BF5 /* FBSDKLoginKit.framework in Frameworks */,
+				2C55F5D621F1186E00413BF5 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +110,9 @@
 				2C55F5A021F0B02C00413BF5 /* WeatherTests */,
 				2C55F5AB21F0B02C00413BF5 /* WeatherUITests */,
 				2C55F58A21F0B02A00413BF5 /* Products */,
+				2C55F5D421F1186E00413BF5 /* Bolts.framework */,
+				2C55F5D321F1186D00413BF5 /* FBSDKCoreKit.framework */,
+				2C55F5D221F1186D00413BF5 /* FBSDKLoginKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +140,7 @@
 				2C55F59321F0B02B00413BF5 /* Assets.xcassets */,
 				2C55F59521F0B02B00413BF5 /* LaunchScreen.storyboard */,
 				2C55F59821F0B02B00413BF5 /* Info.plist */,
+				2C55F5DA21F11D6400413BF5 /* Login.storyboard */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -158,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2C55F58E21F0B02A00413BF5 /* ViewController.swift */,
+				2C55F5D821F11D3E00413BF5 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C55F5DB21F11D6400413BF5 /* Login.storyboard in Resources */,
 				2C55F59721F0B02B00413BF5 /* LaunchScreen.storyboard in Resources */,
 				2C55F59421F0B02B00413BF5 /* Assets.xcassets in Resources */,
 				2C55F59221F0B02A00413BF5 /* Main.storyboard in Resources */,
@@ -338,6 +357,7 @@
 				2C55F58D21F0B02A00413BF5 /* AppDelegate.swift in Sources */,
 				2C55F5C321F0BD3200413BF5 /* Weather.swift in Sources */,
 				2C55F5C521F0BDD900413BF5 /* WeatherDescription.swift in Sources */,
+				2C55F5D921F11D3E00413BF5 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,12 +533,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
 				INFOPLIST_FILE = Weather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cit.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -531,12 +556,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
 				INFOPLIST_FILE = Weather/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cit.Weather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
